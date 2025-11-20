@@ -60,7 +60,7 @@ sudo dpkg --configure -a
 
 ## 2. Remove any APT pinning blocking NVIDIA packages
 
-```console
+```bash
 sudo rm -f /etc/apt/preferences.d/no-580.pref
 ```
 _list everything just to be sure:_
@@ -69,15 +69,10 @@ _list everything just to be sure:_
 ls /etc/apt/preferences.d/
 ```
 
-## 3. Update package lists
+## 3. Update and Install the correct driver
 
 ```bash
 sudo apt update
-```
-
-## 4. Install the correct driver
-
-```bash
 sudo apt install -y nvidia-driver-580-open
 ```
 
@@ -91,13 +86,13 @@ This pulls in:
 - powerd + suspend hooks
 - Wayland EGL support
 
-## 5. Reboot
+## 4. Reboot
 
 ```bash
 sudo reboot
 ```
 
-## 6. verify it works
+## 5. verify it works
 **Check Nvidia-smi:*
 
 ```bash
