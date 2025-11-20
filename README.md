@@ -2,7 +2,7 @@
 
 **Author:** Adam N.
 
-**Why this exists:** No one should suffer through the NVIDIA 50xx driver hell that we did.
+**Why this exists:** No one should suffer through NVIDIA 50xx driver compatibility hell.
 
 This guide documents the **exact steps** required to make the RTX 5070 fully functional on Ubuntu using the correct `nvidia-driver-580-open` package. This resolves black screens, broken boot, missing monitors, nvidia-smi failures, and partial/failed installs.
 
